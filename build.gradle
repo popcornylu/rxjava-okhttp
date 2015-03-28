@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'org.slf4j:slf4j-api:1.7.5',
+            'org.slf4j:slf4j-simple:1.7.5';
+
+    compile 'io.reactivex:rxjava:1.0.8',
+            'io.reactivex:rxjava-string:0.22.0'
+
+    compile 'com.squareup.okhttp:okhttp:2.3.0',
+            'org.apache.commons:commons-lang3:3.0',
+            'net.oauth.core:oauth:20100527',
+            'com.google.code.gson:gson:2.3.1',
+            'org.twitter4j:twitter4j-core:4.0.2',
+            'org.twitter4j:twitter4j-stream:4.0.2'
+
+    testCompile 'junit:junit:4.11'
+}
